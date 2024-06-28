@@ -1,0 +1,33 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    height: 40px;
+    max-width: 400px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 8px;
+}
+
+.button {
+    height: 40px;
+    padding: 5px;
+    background-color: black;
+    color: grey;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
