@@ -1,11 +1,6 @@
 import React from 'react';
+import { ImageCardProps } from '../../types';
 import styles from '../ImageCard/ImageCard.module.css';
-
-interface ImageCardProps {
-    src: string;
-    alt: string;
-    onClick?: React.MouseEventHandler<HTMLImageElement>;
-}
 
 const ImageCard: React.FC<ImageCardProps> = ({ src, alt, onClick }) => {
     return (

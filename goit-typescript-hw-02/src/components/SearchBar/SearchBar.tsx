@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { SearchBarProps } from '../../types';
 import styles from '../SearchBar/SearchBar.module.css';
 
-type HandleQueryFunction = (query: string) => void;
-
-interface SearchBarProps {
-  handleQuery: HandleQueryFunction;
-}
 
 const SearchBar: React.FC<SearchBarProps> = ({ handleQuery }) => {
-  const [searchCriteria, setSearchCriteria] = useState<string>(''); // Définition du type de searchCriteria
+  const [searchCriteria, setSearchCriteria] = useState<string>('');
 
   const notify = () => toast('Please enter the search criteria');
 

@@ -16,3 +16,24 @@ export interface ImageModalProps {
   photo: Photo | null;
   onRequestClose: () => void;
 }
+
+export interface ImageCardProps {
+    src: string;
+    alt: string;
+    onClick?: React.MouseEventHandler<HTMLImageElement>;
+}
+
+export interface ImageGalleryProps {
+  gallery: Photo[];
+  handleModal: (photo: Photo) => void; 
+}
+
+export interface LoadMoreBtnProps {
+  handleLoadMore: () => void;
+}
+
+export type HandleQueryFunction = (query: string) => void;
+
+export interface SearchBarProps {
+  handleQuery: HandleQueryFunction;
+}

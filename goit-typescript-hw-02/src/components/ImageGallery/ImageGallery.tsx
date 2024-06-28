@@ -1,10 +1,5 @@
 import React from 'react';
-import { Photo } from '../../types';
-
-interface ImageGalleryProps {
-  gallery: Photo[];
-  handleModal: (photo: Photo) => void; 
-}
+import { ImageGalleryProps } from '../../types';
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({ gallery, handleModal }) => {
   return (
