@@ -15,14 +15,14 @@ const instance = axios.create({
 });
 
 const App: React.FC = () => {
-  const [photosToShow, setPhotosToShow] = useState<Photo[] | null>(null); // Type defined for photos
+  const [photosToShow, setPhotosToShow] = useState<Photo[] | null>(null);
   const [page, setPage] = useState<number>(0);
   const [query, setQuery] = useState<string>('');
   const [total_pages, setTotal_pages] = useState<number>(0);
   const [error, setError] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [modalIsOpen, setIsOpen] = useState<boolean>(false);
-  const [bigImage, setBigImage] = useState<Photo | null>(null); // Type defined for large image
+  const [bigImage, setBigImage] = useState<Photo | null>(null);
 
   const handleQuery = (searchTerm: string) => {
     setQuery(searchTerm);
