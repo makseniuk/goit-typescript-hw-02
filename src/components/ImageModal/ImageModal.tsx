@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 import { ImageModalProps } from '../../types';
-import styles from './ImageModal.module.css'; // Corrected import path for CSS module
+import styles from "../ImageModal/ImageModal.module.css"
 Modal.setAppElement('#root');
 
 const customStyles = {
